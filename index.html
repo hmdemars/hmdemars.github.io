@@ -60,9 +60,16 @@ p{font-family: 'Georgia bold', serif:}
 <br><br>
 Having trouble deciding what to potions to make with this seasons crops? Please enjoy this <a href = "Magical-Herbs-Kitchen-Spells8.pdf"> pamphlet of our favorite spells </a> to whip up in kitchen. Our staff picks are perfect for the next full moon or a simple weekend treat. 
 
-<br>
+<br/><br/>
 
-<?php echo "Page last modified: " . date ("F d Y H:i:s.", filemtime(__FILE__)); ?>
+<font face = "Alice" size = "2" color = "grey">
+	&copy; 2025 Coltivare. All rights reserved.<br/>
+	Date last modified: <span id = "lastModified"></span>
+</font>
+
+<script>
+	document.getElementById("lastModified").textContext = document.lastModified;
+</script>
 </body>
 
 
